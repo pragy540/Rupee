@@ -33,6 +33,23 @@
   }
   ?>
 
+
+<!-- existing preferences to be shown here -->
+<?php
+session_start();
+
+
+
+
+
+
+
+
+
+
+
+?>
+
   <!-- form starts here -->
   <div class="container ">
  
