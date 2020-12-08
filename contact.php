@@ -34,9 +34,10 @@
     $pos = $row['position'];
     $contact = $row['contact_no'];
     $email = $row['email'];
+    $img=$row['photo'];
     echo '  <div class="col-md-4 my-3 ">
     <div class="card" style="width: 18rem;">
-    <img src="/eurp/partials/img/council.jfif" class="card-img-top" alt="...">
+    <img src="/eurp/partials/img/'.$img.'" height="250px" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">'.$name.'</h5>
       <h5 class="card-title">'.$pos.'</h5>

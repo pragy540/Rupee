@@ -33,47 +33,55 @@
   }
   ?>
 
-
-<!-- existing preferences to be shown here -->
-<?php
-session_start();
-
-
-
-
-
-
-
-
-
-
-
-?>
-
   <!-- form starts here -->
   <div class="container ">
  
   <h1 class="text-danger text-center my-3">Your Application </h1>
   <form action="/eurp/partials/_handle_preferences.php" method="post" >
-  <p class="font-weight-bold text-left mb-0">Enter the UID of preferred project. </p>
+  <p class="font-weight-bold text-left mb-0">Enter the UID of preferred project in the preference fields. </p>
   <p class="font-weight-normal text-left mt-0">(If there is no preference for any preference level, write "None".) </p>
-  <div class="form-group">
-    <label for="preference1">Preference 1 </label>
-    <textarea class="form-control" id="preference1" name="preference1" rows="1"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="preference2">Preference 2 </label>
-    <textarea class="form-control" id="preference2" name="preference2" rows="1"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="preference3">Preference 3 </label>
-    <textarea class="form-control" id="preference3" name="preference3" rows="1"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="preference4">Preference 4 </label>
-    <textarea class="form-control" id="preference4" name="preference4" rows="1"></textarea>
-  </div>
-  
+  <div class="mb-3">
+  <label for="name1" class="form-label">Your Name</label>
+  <input type="text" class="form-control" id="name1" name="name1" >
+</div>
+  <div class="mb-3">
+  <label for="rollno" class="form-label">Roll Number</label>
+  <input type="text" class="form-control" id="rollno" name="rollno" >
+</div>
+  <div class="mb-3">
+  <label for="pre1" class="form-label">First Prefrence</label>
+  <input type="text" class="form-control" id="pre1" name="pre1" >
+</div>
+  <div class="mb-3">
+  <label for="linkpre1" class="form-label">Link to the drive for Resume/SOP for first preference</label>
+  <input type="text" class="form-control" id="linkpre1" name="linkpre1" >
+</div>
+  <div class="mb-3">
+  <label for="pre2" class="form-label">Second Prefrence</label>
+  <input type="text" class="form-control" id="pre2" name="pre2" >
+</div>
+  <div class="mb-3">
+  <label for="linkpre2" class="form-label">Link to the drive for Resume/SOP for second preference</label>
+  <input type="text" class="form-control" id="linkpre2" name="linkpre2" >
+</div>
+  <div class="mb-3">
+  <label for="pre3" class="form-label">Third Prefrence</label>
+  <input type="text" class="form-control" id="pre3" name="pre3" >
+</div>
+  <div class="mb-3">
+  <label for="linkpre3" class="form-label">Link to the drive for Resume/SOP for third preference</label>
+  <input type="text" class="form-control" id="linkpre3" name="linkpre3" >
+</div>
+  <div class="mb-3">
+  <label for="pre4" class="form-label">Fourth Prefrence</label>
+  <input type="text" class="form-control" id="pre4" name="pre4" >
+</div>
+  <div class="mb-3">
+  <label for="linkpre4" class="form-label">Link to the drive for Resume/SOP for fourth preference</label>
+  <input type="text" class="form-control" id="linkpre4" name="linkpre4" >
+</div>
+
+
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
   </div>

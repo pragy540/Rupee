@@ -22,24 +22,24 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="partials/img/eurp1.jfif" class="d-block w-100" alt="...">
+      <img src="partials/img/rupee1.jpg" class="d-block w-100" >
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h5>RUPEE</h5>
+        <p>RUPEE (Research Undergraduate Programme for Emerging Economists) as the name suggests is a program for intra-departmental project allocation for research enthusiastic undergraduates of Economics. It encourages students to take up hands-on research experiences under IITB professors and their teams during the semester.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="partials/img/eurp3.jfif" class="d-block w-100" alt="...">
+      <img src="partials/img/rupee2.jpg" class="d-block w-100" >
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h5 class="text-dark">Zora Neale Hurston</h5>
+        <p class="text-dark">"Research is formalized curiosity. It is poking and prying with a purpose."</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="partials/img/eurp2.png" class="d-block w-100" alt="...">
+      <img src="partials/img/rupee3.jpg" class="d-block w-100 ">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h5>Neil Armstrong</h5>
+        <p>"Research is creating new knowledge." </p>
       </div>
     </div>
   </div>

@@ -1,23 +1,4 @@
-<?php
-require 'partials/_dbconnect.php';
-
-if(isset($_GET['UID'])){
-   $UID=$_GET['UID'];
-} 
-
-$sql= "select * from `projects` where `UID` = '$UID'";
-$result = mysqli_query($conn, $sql);
-$numRows = mysqli_num_rows($result);
-if($numRows == 1){
-    $row = mysqli_fetch_assoc($result);
-}
-$UID=$row['UID'];
-$proj= $row['name'];
-$desc = $row['desc'];
-$prof = $row['prof'];
-
-require 'partials/_nav.php';
-echo '<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -30,26 +11,28 @@ echo '<!doctype html>
     <title>Project</title>
   </head>
   <body>
-  <main role="main" class="container my-3">
+  <?php
+ require 'partials/_nav.php';
+ ?>
+
+  <div class="container my-3">
   <div class="row">
-    <div class="col-md-8 blog-main">
-      <h3 class="pb-4 mb-4 font-italic border-bottom">
-        From Professor '.$prof.' <br>
-        UID : '.$UID.'
+    <div class="col-md-8 blog-main bg-light rounded">
+      <h3 class="pb-4 mb-4 font-italic border-bottom text-center">
+        About Us <br>
+       
       </h3>
 
       <div class="blog-post">
-        <h2 class="blog-post-title">'.$proj.'</h2>
+        <h2 class="blog-post-title"></h2>
         
-        <p>'.$desc.'
-
+        <p>RUPEE ( Research Undergraduate Programme for Emerging Economists) as the name infers is an intra department programme for project allocation for research enthusiastic undergraduate Economics students. It encourages students to take up hands-on research experience under the economics faculty of the institute and their teams during the next semester. Hope this program helps some you guys pursue projects in your field of interest and also build a futuristic research perspective!</p>
       </div>
      </div>
 
-
   </div><!-- /.row -->
 
-</main>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -63,7 +46,6 @@ echo '<!doctype html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
   </body>
-</html>';
-
-
-?>
+</html>
+ 
+    

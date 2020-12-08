@@ -30,6 +30,9 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
    <li class="nav-item active">
         <a class="nav-link" href="/eurp/contact.php/">Contact Us <span class="sr-only">(current)</span></a>
    </li>
+   <li class="nav-item active">
+        <a class="nav-link" href="/eurp/about.php/">About <span class="sr-only">(current)</span></a>
+   </li>
     </ul>';
 
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
